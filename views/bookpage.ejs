@@ -1,0 +1,54 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+            <h1>
+                <div class="table-responsive">
+
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr class="table-dark ">
+                                <th>TITLE</th>
+                                <th>AUTHOR</th>
+                                <th>GENRE</th>
+                                <th>YEAR</th>
+                                <th>PAGES</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td>
+                                <%= book.title %>
+                            </td>
+                            <td>
+                                <%= book.author %>
+                            </td>
+                            <td>
+                                <%= book.genre %>
+                            </td>
+                            <td>
+                                <%= book.published_year %>
+                            </td>
+                            <td>
+                                <%= book.pages %>
+                            </td>
+
+
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </h1>
+        </div>
+    </div>
+    </div>
+
+    <%- include('layout/footer') %>

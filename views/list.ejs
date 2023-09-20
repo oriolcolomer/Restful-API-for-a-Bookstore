@@ -1,0 +1,54 @@
+<%- include('layout/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+            </div>
+            <h1>
+                <div class="table-responsive">
+
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr class="table-dark ">
+                                <th>TITLE</th>
+                                <th>AUTHOR</th>
+                                <th>GENRE</th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(var i=0; i < newBook.length; i++) { %>
+                               <tr>
+                                <td>
+                                    <%= newBook[i].title %>
+                                </td>
+                                <td>
+                                    <%= newBook[i].author %>
+                                </td>
+                                <td>
+                                    <%= newBook[i].genre %>
+                                </td>
+                                <td>
+                                    <a href="/delete/<%= newBook[i].id%>">borrar</a>
+                                <td>
+                                    <a href="/edit/<%= newBook[i].id%>">editar</a>
+                                </td>
+
+
+
+
+                                <% }%>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </h1>
+        </div>
+    </div>
+    </div>
+
+    <%- include('layout/footer') %>

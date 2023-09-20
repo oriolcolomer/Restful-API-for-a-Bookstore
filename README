@@ -1,0 +1,7 @@
+El crud funciona a partir de la vista list on surten tots els llibres. 
+En aquella vista es pot accedir a editar, veure la informació d'un llibre o borrarlo.
+Desde el header es pot accedir a un formulari de creació de llibres amb el botó Add Books 
+el qual un cop validat retornarà a la vista list i mostrarà el llibre ja guardat a la BBDD
+Al apretar el botó de edit ens redirigeix a un formulari on es poden modificar les dades del llibre.
+I amb el botó de borrar doncs s'esborra el llibre i ens redirigeix a la vista de la llista de llibres.
+A .env estan les variables de entorn i allà es pot trobar el link a la BBDD on està conectada i el port amb el que treballa la app.
